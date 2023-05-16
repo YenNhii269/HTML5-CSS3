@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+header{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+header>img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.wrapper{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(53, 53, 74);
+    width: 100%;
+    height: auto;
+}
+.wrapper .menu{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.wrapper .menu .clearfix{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.wrapper .menu .clearfix li{
+    position: relative;
+}
+.wrapper .menu .clearfix li a{
+    color: aliceblue;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+.wrapper .menu .clearfix li a:hover{
+    background-color: rgb(22, 22, 29);
+    border-radius: 5px;
+}
+.wrapper .menu .clearfix .sub-menu{
+    width: 150px;
+    position: absolute;
+    background-color: rgb(53, 53, 74);
+    padding: 0px;
+    list-style: none;
+    border-radius: 5px;
+    display: none;
+}
+.wrapper .menu .clearfix li:hover .sub-menu{
+    display: block;
+}
+.wrapper .menu .clearfix .sub-menu a{
+    padding: 8px 20px;
+}
+.banner{
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.banner .nd{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 850px;
+    margin-right: 120px;
+    color: aliceblue;
+    max-width: 250px;
+}
+.banner .nd .tieude{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.banner .nd .gioithieu{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+}
+.banner .timkiem{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 1075px;
+    margin-right: 65px;
+}
+.banner .timkiem .form-group input{
+    border-radius: 30px;
+    min-height: 30px;
+    padding: 5px 15px;
+    box-shadow: inset 5px 5px 5px #888888;
+}
+.banner .timkiem .form-group .btn{
+    color: aliceblue;
+    background-color: rgb(5, 122, 154);
+    border-radius: 30px;
+    min-height: 35px;
+    padding: 5px 3px;
+    box-shadow: 6px 5px 8px 0px #888888;
+}
+.content1{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+.content1 .latest-new{
+    justify-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.content1 .latest-new .latest-new-post{
+    min-height: 360px;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    border-bottom: 1px solid black;
+}
+.content1 .latest-new .latest-new-post:last-child{
+    margin-top: 10px;
+    border: none;
+}
+.content1 .latest-new .latest-new-post .latest-new-img >img{
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    float: left;
+}
+.content1 .latest-new .latest-new-post .latest-new-content{
+    text-align: justify;
+    width: 65%;
+    float: left;
+    margin-left: 40px;
+}
+footer{
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(120, 141, 134);
+}
