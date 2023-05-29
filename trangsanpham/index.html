@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- liên kết icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+
+    <!--liên kết font chữ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- liên kế css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- nơi mở đầu của header -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="hinhanh/logo.jpg" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#">trang chủ</a>
+            <a href="#">sản phẩm</a>
+            <a href="#">tin tức</a>
+            <a href="#">giới thiệu</a>
+            <a href="login.html">đăng nhập</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Tìm kiếm tại đây...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="hinhanh/jh_latte.jpg" alt="">
+                <div class="container">
+                    <h3>cart item 01</h3>
+                    <div class="price">45.000đ</div>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="hinhanh/jin_americano.jpg" alt="">
+                <div class="container">
+                    <h3>cart item 02</h3>
+                    <div class="price">45.000đ</div>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="hinhanh/jk_vanilla.jpg" alt="">
+                <div class="container">
+                    <h3>cart item 03</h3>
+                    <div class="price">45.000đ</div>
+                </div>
+            </div>
+            <a href="#" class="btn">checkout now</a>
+        </div>
+
+    </header>
+    <!-- nơi kết thúc của header -->
+
+    <!-- nơi mở đầu của banner -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>bts coffee xin chào!</h3>
+            <!-- <p>bts coffee hân hạnh chào đón bạn
+            </p> -->
+            <a href="#" class="btn">mua ngay</a>
+        </div>
+    </section>
+    <!-- nơi kết thúc của banner -->
+
+    <!-- nơi bắt đầu phần menu -->
+    <section class="menu" id="menu">
+        <h1 class="heading"> tất cả <span>sản phẩm</span></h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="hinhanh/jh_latte.jpg" alt="">
+                <h3>mocha latte - j hope</h3>
+                <div class="price"><span class="gia">45.000</span><span class="giacu">60.000đ</span></div>
+                <button class="addcart">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="box">
+                <img src="hinhanh/jin_americano.jpg" alt="">
+                <h3>americano - jin</h3>
+                <div class="price"><span class="gia">45.000</span><span class="giacu">60.000đ</span></div>
+                <button onclick="them(this)">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="box">
+                <img src="hinhanh/jk_vanilla.jpg" alt="">
+                <h3>vanilla latte - jungkook</h3>
+                <div class="price"><span class="gia">45.000</span><span class="giacu">60.000đ</span></div>
+                <button class="addcart">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="box">
+                <img src="hinhanh/v_latte.jpg" alt="">
+                <h3>mocha latte - v</h3>
+                <div class="price"><span class="gia">45.000</span><span class="giacu">60.000đ</span></div>
+                <button class="addcart">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="box">
+                <img src="hinhanh/suga_vanilla.jpg" alt="">
+                <h3>vanilla latte - suga</h3>
+                <div class="price"><span class="gia">45.000</span><span class="giacu">60.000đ</span></div>
+                <button class="addcart">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="box">
+                <img src="hinhanh/jimin_vanilla.jpg" alt="">
+                <h3>vanilla latte - jimin</h3>
+                <div class="price"><span class="gia">45.000</span><span class="giacu">60.000đ</span></div>
+                <button class="addcart">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </section>
+    <!-- nơi kết thúc phần menu -->
+
+    <!-- nơi bắt đầu của products combo -->
+    <section class="products" id="products">
+        <h1 class="heading"> các <span>combo</span> nổi bật </h1>
+        <div class="box-container">
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="hinhanh/product1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>combo 7 mocha latte</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price"> 200.000đ <span>250.000đ</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="hinhanh/product2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>combo 7 vanilla latte</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">200.000đ <span>250.000đ</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="hinhanh/product3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>combo 7 americano</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">200.000đ <span>250.000đ</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nơi kết thúc của products combo -->
+
+    <!-- nơi bắt đầu phần blogs -->
+    <section class="blogs" id="blogs">
+        <h1 class="heading"><span>tin tức</span> hot </h1>
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="hinhanh/tintuc1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">khuyến mãi</a>
+                    <span>bts coffee / 14-02-2023</span>
+                    <p>khuyến mãi lớn! tri ân kỷ niệm 10 năm hoạt động của bts: mua một tặng hai, mua ba free ship</p>
+                    <a href="#" class="btn">xem thêm</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="hinhanh/tintuc2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">khuyến mãi</a>
+                    <span>bts coffe / 16-03-2023</span>
+                    <p>khi mua combo ba sản phẩm ngẫu nhiên được tặng kèm một sản phẩm ngẫu nhiên</p>
+                    <a href="#" class="btn">xem thêm</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="hinhanh/tintuc3.png" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">bts coffee</a>
+                    <span>CGV Việt Nam / 15-05-2023</span>
+                    <p>phim tài liệu jack in box - jhope sẽ được khởi chiếu tại cgv việt nam vào ngày 17/06/2023</p>
+                    <a href="#" class="btn">xem thêm</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- nơi kết thúc phần blogs -->
+
+    <!-- nơi bắt đầu phần review -->
+    <section class="review" id="review">
+        <h1 class="heading"> bài viết <span>đánh giá</span> </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="hinhanh/quote.png" alt="" class="quote">
+                <p>sản phẩm tinh tế, dễ sử dụng, shop nhiệt tình. tôi rất thích cà phê ở dây mùi vị thanh mát rất ngon.
+                    cảm ơn!</p>
+                <img src="hinhanh/user-1.jpg" class="user" alt="">
+                <h3>lisa</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="hinhanh/quote.png" alt="" class="quote">
+                <p>Tôi thường xuyên mua sản phẩm ỏ đây, đóng gói rất tốt. mùi vị cà phê ngon lắm. tôi cũng là fan hâm mộ
+                    bts, chúc shop ngày càng phát triển.</p>
+                <img src="hinhanh/user-2.jpg" class="user" alt="">
+                <h3>soobin</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="hinhanh/quote.png" alt="" class="quote">
+                <p>Tôi rất thích các sản phẩm cà phê ở đây, mùi vị rất ổn. mọi người hãy ủng hộ, tin tôi đi nó sẽ không
+                    làm các bạn thất vọng</p>
+                <img src="hinhanh/user-3.jpg" class="user" alt="">
+                <h3>sơn tùng</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nơi kết thúc phần review -->
+
+    <!-- nơi bắt đầu phần about -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>thông tin</span> giới thiệu </h1>
+        <div class="row">
+            <div class="image">
+                <img src="image/about1.jpg" onclick="changeImage()" id="anh" alt="">
+            </div>
+
+            <div class="content">
+                <h3>giới thiệu BTS COFFEE</h3>
+                <p>BTS Coffee, thương hiệu cà phê được tạo ra bởi HY Fresh từng cháy hàng tại Việt Nam năm 2020, đã
+                    chính thức có mặt tại Việt Nam với phiên bản 2022!</p>
+                <p>Là sự kết hợp độc đáo giữa công thức cà phê độc quyền Cold & Hot Brew của Nhà vô địch bartender Mỹ
+                    2015 Charles Babinski, do HY Fresh, công ty thực phẩm và sản xuất đồ uống hàng đầu Hàn Quốc sản
+                    xuất. Phiên bản BTS Coffee 2022 mang theo sự cải tiến về hương vị, đậm đà hơn, cuốn hút hơn, nhưng
+                    vẫn giữ trọn vẹn sự hấp dẫn vốn có từ Cold & Hot Brew nổi tiếng của BTS Coffee.</p>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+        </div>
+    </section>
+    <!-- nơi kết thúc phần about -->
+
+    <!-- nơi bắt đầu của phần cmt -->
+    <div class="ytb">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/MBdVXkSdhwU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="cmt">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0&appId=949807443013841&autoLogAppEvents=1"
+            nonce="C22TyjCo"></script>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout=""
+            data-action="" data-size="" data-share="true"></div>
+        <div class="fb-comments" data-href="http://127.0.0.1:5500/sanphamchitiet/index.html" data-width="100%"
+            data-numposts="5"></div>
+    </div>
+    <!-- nơi kết thúc của phần cmt -->
+
+    <!-- nơi bắt đầu phần footer -->
+    <section class="footer">
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="links">
+            <a href="#">trang chủ</a>
+            <a href="#">sản phẩm</a>
+            <a href="#">tin tức</a>
+            <a href="#">giới thiệu</a>
+            <a href="login.html">đăng nhập</a>
+        </div>
+
+        <div class="credit"> Tạo bởi <span>Le Thi Kim Yen</span> | PC06995 WD18305</div>
+    </section>
+    <!-- nơi kết thúc phần footer -->
+</body>
+
+</html>
+
+<!-- liên kế js -->
+<script src="script/js.js"></script>
